@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Reflection
+    uniqueID: 2753797889
+    locked: 0
+  - name: Lake
+    uniqueID: 170510205
+    locked: 0
+  - name: Background
+    uniqueID: 3335199657
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Raindrops
+    uniqueID: 2747205941
+    locked: 0
+  - name: Person
+    uniqueID: 828554001
+    locked: 0
+  - name: Rain
+    uniqueID: 3427273679
+    locked: 0
+  - name: Sunshafts
+    uniqueID: 1524900495
+    locked: 0
+  - name: UI
+    uniqueID: 1790425219
+    locked: 0
