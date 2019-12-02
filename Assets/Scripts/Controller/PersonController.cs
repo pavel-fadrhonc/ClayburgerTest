@@ -61,12 +61,13 @@ namespace DefaultNamespace
                 case ePersonState.Idling:
                     Transform pointToJump = null;
                     
-                    var jump = Input.GetMouseButton(0);
-                    if (jump)
+                    if (_jump)
                     {
                         var nextJumpPointIdx = _currentJumpPointIdx + 1;
                         nextJumpPointIdx %= jumpingPoints.Count;
                         pointToJump = jumpingPoints[nextJumpPointIdx];
+
+                        _jump = false;
                     }
                     
                     var jumpDir = Input.GetAxis("Horizontal");
@@ -134,6 +135,7 @@ namespace DefaultNamespace
                     {
                         _transform.position = _endJumpPos;
                         _personState = ePersonState.Idling;
+                        _jump = false;
                         _personModel.NumJumps++;
                         _transform.localScale = new Vector3(_transform.localScale.x * -1, _transform.localScale.y, _transform.localScale.z);
                     }
@@ -149,6 +151,13 @@ namespace DefaultNamespace
                 default:
                     break;
             }
+        }
+
+        private bool _jump = false;
+        
+        public void Jump()
+        {
+            _jump = true;
         }
     }
 }

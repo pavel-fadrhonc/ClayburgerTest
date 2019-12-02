@@ -23,6 +23,8 @@ namespace DefaultNamespace
         }
         
         #endregion
+
+        public PersonController PersonController;
         
         public PersonModel PersonModel { get; set; }
     }
